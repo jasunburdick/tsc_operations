@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCN 2241 | Construction Operations Portal</title>
+    <!-- Tailwind CSS for rapid modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for professional UI elements -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Barlow+Condensed:wght@700&display=swap');
+        
+        :root {
+            --safety-orange: #f97316;
+            --construction-navy: #0f172a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+
+        .hero-font {
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+
+        .chapter-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--safety-orange);
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-slate-900 text-white border-b-4 border-orange-500 shadow-lg">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-orange-500 hero-font uppercase tracking-widest text-xl mb-2">University Department of Construction</h2>
+                    <h1 class="text-4xl md:text-6xl hero-font uppercase font-bold leading-tight">BCN 2241: <br>Construction Operations</h1>
+                </div>
+                <div class="mt-8 md:mt-0 bg-white/10 p-4 rounded-lg backdrop-blur-sm border border-white/20">
+                    <div class="flex items-center space-x-3">
+                        <i data-lucide="calendar" class="text-orange-500"></i>
+                        <span>Semester: Fall 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <!-- Quick Stats / Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
+                <div class="bg-orange-100 p-3 rounded-full text-orange-600">
+                    <i data-lucide="book-open"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 uppercase font-bold">Total Modules</p>
+                    <p class="text-2xl font-bold">12 Chapters</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
+                <div class="bg-blue-100 p-3 rounded-full text-blue-600">
+                    <i data-lucide="hard-hat"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 uppercase font-bold">Field Application</p>
+                    <p class="text-2xl font-bold">Operations Focus</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex items-center space-x-4">
+                <div class="bg-green-100 p-3 rounded-full text-green-600">
+                    <i data-lucide="check-circle-2"></i>
+                </div>
+                <div>
+                    <p class="text-sm text-slate-500 uppercase font-bold">Course Credits</p>
+                    <p class="text-2xl font-bold">3.0 Units</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+            <i data-lucide="layout-grid" class="text-orange-500"></i>
+            Course Curriculum
+        </h2>
+
+        <!-- Chapter Navigation Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Chapter 1 -->
+            <a href="chapter-1.html" class="chapter-card bg-white p-6 rounded-xl border-2 border-transparent shadow-sm hover:shadow-md block group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold uppercase">Chapter 01</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-slate-300 group-hover:text-orange-500 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">Introduction to Operations</h3>
+                <p class="text-slate-600 text-sm">Foundational concepts of construction management and the project lifecycle.</p>
+            </a>
+
+            <!-- Chapter 2 -->
+            <a href="chapter-2.html" class="chapter-card bg-white p-6 rounded-xl border-2 border-transparent shadow-sm hover:shadow-md block group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold uppercase">Chapter 02</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-slate-300 group-hover:text-orange-500 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">Project Delivery Systems</h3>
+                <p class="text-slate-600 text-sm">Deep dive into DBB, Design-Build, CM@R, and Integrated Project Delivery.</p>
+            </a>
+
+            <!-- Chapter 3 -->
+            <a href="chapter-3.html" class="chapter-card bg-white p-6 rounded-xl border-2 border-transparent shadow-sm hover:shadow-md block group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold uppercase">Chapter 03</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-slate-300 group-hover:text-orange-500 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">Contract Documentation</h3>
+                <p class="text-slate-600 text-sm">Mastering the CSI MasterFormat, specs, and architectural drawings.</p>
+            </a>
+
+            <!-- Chapter 4 -->
+            <a href="chapter-4.html" class="chapter-card bg-white p-6 rounded-xl border-2 border-transparent shadow-sm hover:shadow-md block group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold uppercase">Chapter 04</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-slate-300 group-hover:text-orange-500 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">Site Logistics & Mobilization</h3>
+                <p class="text-slate-600 text-sm">Planning temporary facilities, traffic control, and crane placement.</p>
+            </a>
+
+            <!-- Chapter 5 -->
+            <a href="chapter-5.html" class="chapter-card bg-white p-6 rounded-xl border-2 border-transparent shadow-sm hover:shadow-md block group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold uppercase">Chapter 05</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-slate-300 group-hover:text-orange-500 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">Safety Management</h3>
+                <p class="text-slate-600 text-sm">OSHA standards, hazard communication, and safety-first culture.</p>
+            </a>
+
+            <!-- Chapter 6 -->
+            <a href="chapter-6.html" class="chapter-card bg-white p-6 rounded-xl border-2 border-transparent shadow-sm hover:shadow-md block group">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="bg-slate-100 text-slate-600 px-3 py-1 rounded text-xs font-bold uppercase">Chapter 06</span>
+                    <i data-lucide="arrow-right" class="w-5 h-5 text-slate-300 group-hover:text-orange-500 transition-colors"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-900 transition-colors">Quality & Inspections</h3>
+                <p class="text-slate-600 text-sm">QA/QC processes, building codes, and material testing procedures.</p>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-200 py-12 border-t border-slate-300">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-600 mb-2 font-semibold">BCN 2241 Construction Operations</p>
+            <p class="text-slate-500 text-sm">Contact: professor@university.edu | Office: BCN Bldg Room 302</p>
+            <div class="mt-6 flex justify-center space-x-4">
+                <div class="h-1 w-12 bg-orange-500 rounded"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
